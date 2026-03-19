@@ -1,1 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teaching | Jeffrey Pagel</title>
 
+  <style>
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: 300;
+      color: #000;
+      background: #ffffff;
+      line-height: 1.65;
+      letter-spacing: 0.01em;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 32px 80px;
+    }
+
+    .site-title {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 14px;
+      font-weight: 300;
+      color: #000;
+    }
+
+    .nav {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #777;
+      margin: 0 10px;
+      font-size: 0.85rem;
+      font-weight: 300;
+      letter-spacing: 0.02em;
+    }
+
+    .nav a:hover {
+      color: #000;
+    }
+
+    .teaching-main {
+      display: flex;
+      gap: 60px;
+      align-items: flex-start;
+    }
+
+    .teaching-image {
+      flex: 0 0 360px;
+    }
+
+    .teaching-image img {
+      width: 360px;
+      height: auto;
+      display: block;
+    }
+
+    .teaching-text {
+      flex: 1;
+      max-width: 520px;
+      font-size: 0.95rem;
+    }
+
+    .teaching-text p {
+      margin-top: 0;
+      margin-bottom: 1.3em;
+    }
+
+    .institution {
+      font-weight: 400;
+      margin-bottom: 0.5em;
+    }
+
+    .course-list {
+      margin: 0 0 1.6em 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .course-list li {
+      margin-bottom: 0.55em;
+    }
+
+    .footer {
+      margin-top: 70px;
+      font-size: 0.85rem;
+      color: #888;
+      text-align: center;
+    }
+
+    @media (max-width: 700px) {
+      .container {
+        padding: 40px 20px 60px;
+      }
+
+      .site-title {
+        font-size: 1.6rem;
+      }
+
+      .nav {
+        margin-bottom: 36px;
+      }
+
+      .nav a {
+        display: inline-block;
+        margin: 6px 8px;
+      }
+
+      .teaching-main {
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .teaching-image img {
+        width: 260px;
+      }
+
+      .teaching-text {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="site-title">Jeffrey Pagel</div>
+
+    <div class="nav">
+      <a href="index.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="teaching-main">
+      <div class="teaching-image">
+        <img src="assets/files/IMG_0924.jpg" alt="Teaching image" />
+      </div>
+
+      <div class="teaching-text">
+        <p class="institution">London School of Economics</p>
+        <ul class="course-list">
+          <li>Economic Development and the Environment (2023; 2024) [MSc course]</li>
+          <li>Sustainable Development (2023; 2024; 2025)</li>
+        </ul>
+
+        <p class="institution">University of Barcelona</p>
+        <ul class="course-list">
+          <li>Economic Policy: Goals and Instruments (2020; 2021)</li>
+          <li>European and International Economic Environment (2018)</li>
+        </ul>
+
+        <p class="institution">Marquette University</p>
+        <ul class="course-list">
+          <li>Business Analytical Tools (2015; 2016)</li>
+          <li>TA for Abdur Chowdhury in International Currency Markets (2014–2016)</li>
+          <li>TA for Heather Kohls in Environmental and Natural Resource Economics (2014–2016)</li>
+          <li>TA for Heather Kohls in Principles of Microeconomics (2014–2016)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer">
+      © Jeffrey Pagel
+    </div>
+  </div>
+</body>
+</html>
