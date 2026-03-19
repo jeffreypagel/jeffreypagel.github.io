@@ -12,14 +12,14 @@
       font-weight: 300;
       color: #000;
       background: #ffffff;
-      line-height: 1.65;
+      line-height: 1.5; /* tighter overall */
       letter-spacing: 0.01em;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
 
     .container {
-      max-width: 900px;
+      max-width: 1000px; /* slightly wider page */
       margin: 0 auto;
       padding: 60px 32px 80px;
     }
@@ -29,7 +29,6 @@
       font-size: 2.2rem;
       margin-bottom: 14px;
       font-weight: 300;
-      color: #000;
     }
 
     .nav {
@@ -50,46 +49,48 @@
       color: #000;
     }
 
+    /* MAIN LAYOUT */
     .teaching-main {
       display: flex;
-      gap: 60px;
-      align-items: flex-start;
+      gap: 50px;
+      align-items: center; /* center image vertically */
     }
 
     .teaching-image {
-      flex: 0 0 360px;
+      flex: 0 0 300px;
     }
 
     .teaching-image img {
-      width: 360px;
+      width: 300px;
       height: auto;
       display: block;
     }
 
-.teaching-text {
-  flex: 1;
-  max-width: 650px;   /* wider text */
-  font-size: 0.95rem;
-}
+    .teaching-text {
+      flex: 1;
+      max-width: 700px; /* wider text block */
+      font-size: 0.92rem;
+    }
 
     .teaching-text p {
       margin-top: 0;
-      margin-bottom: 1.3em;
+      margin-bottom: 0.6em; /* tighter spacing */
     }
 
     .institution {
       font-weight: 400;
-      margin-bottom: 0.5em;
+      margin-bottom: 0.3em;
     }
 
     .course-list {
-      margin: 0 0 1.6em 0;
+      margin: 0 0 1.2em 0;
       padding: 0;
       list-style: none;
+      line-height: 1.4; /* tighter line spacing */
     }
 
     .course-list li {
-      margin-bottom: 0.55em;
+      margin-bottom: 0.3em;
     }
 
     .footer {
@@ -117,19 +118,19 @@
         margin: 6px 8px;
       }
 
-.teaching-main {
-  display: flex;
-  gap: 50px;                 /* slightly tighter gap */
-  align-items: center;       /* center image vertically */
-}
+      .teaching-main {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+      }
 
-.teaching-image {
-  flex: 0 0 340px;
-}
+      .teaching-image img {
+        width: 240px;
+      }
 
-.teaching-image img {
-  width: 340px;
-}
+      .teaching-text {
+        max-width: 100%;
+      }
     }
   </style>
 </head>
@@ -146,6 +147,7 @@
     </div>
 
     <div class="teaching-main">
+      
       <div class="teaching-image">
         <img src="assets/files/IMG_0924.jpg" alt="Teaching image" />
       </div>
@@ -171,6 +173,7 @@
           <li>TA for Heather Kohls in Principles of Microeconomics (2014–2016)</li>
         </ul>
       </div>
+
     </div>
 
     <div class="footer">
