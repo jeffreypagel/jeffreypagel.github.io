@@ -14,6 +14,8 @@
       background: #ffffff;
       line-height: 1.65;
       letter-spacing: 0.01em;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
 
     .container {
@@ -24,9 +26,10 @@
 
     .site-title {
       text-align: center;
-      font-size: 1.9rem;
+      font-size: 2.2rem;
       margin-bottom: 14px;
-      font-weight: 600;
+      font-weight: 300;
+      color: #000;
     }
 
     .nav {
@@ -40,6 +43,7 @@
       margin: 0 10px;
       font-size: 0.85rem;
       font-weight: 300;
+      letter-spacing: 0.02em;
     }
 
     .nav a:hover {
@@ -48,31 +52,69 @@
 
     h1 {
       font-size: 1.2rem;
-      font-weight: 500;
-      margin-bottom: 30px;
-    }
-
-    .paper {
+      font-weight: 400;
       margin-bottom: 28px;
     }
 
-    .paper-title {
-      font-weight: 500;
+    h2 {
+      font-size: 1rem;
+      font-weight: 400;
+      margin-top: 38px;
+      margin-bottom: 18px;
     }
 
-    .paper-authors {
-      color: #444;
+    .paper {
+      margin-bottom: 26px;
+    }
+
+    .paper-title {
+      font-size: 1rem;
+      font-weight: 400;
+      margin-bottom: 4px;
+    }
+
+    .paper-authors,
+    .paper-journal,
+    .paper-desc {
+      font-size: 0.95rem;
+      font-weight: 300;
+      color: #000;
+      margin-bottom: 5px;
     }
 
     .paper-links a {
       font-size: 0.9rem;
-      margin-right: 10px;
       color: #000;
       text-decoration: none;
+      margin-right: 12px;
     }
 
     .paper-links a:hover {
       text-decoration: underline;
+    }
+
+    .work-item {
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 700px) {
+      .container {
+        padding: 40px 20px 60px;
+      }
+
+      .site-title {
+        font-size: 1.6rem;
+      }
+
+      .nav {
+        margin-bottom: 40px;
+      }
+
+      .nav a {
+        display: inline-block;
+        margin: 6px 8px;
+      }
     }
   </style>
 </head>
@@ -87,23 +129,93 @@
       <a href="#">Contact</a>
     </div>
 
-    <h1>Working Papers</h1>
+    <h1>Research</h1>
 
-    <!-- PAPER 1 -->
+    <h2>Publications</h2>
+
     <div class="paper">
-      <div class="paper-title">
-        More Than Just Carbon: The Socioeconomic Impact of Large-Scale Tree Planting 
-      </div>
-      <div class="paper-authors">
-        (with Lorenzo Sileci and Charles Palmer) [under review]
-      </div>
+      <div class="paper-title">A natural resource curse: The unintended effects of gold mining on malaria</div>
+      <div class="paper-authors">Jeffrey Pagel</div>
+      <div class="paper-journal">Ecological Economics, 2025</div>
       <div class="paper-links">
-        <a href="#">Paper</a>
-        <a href="#">We evaluate the poverty impacts of the Philippines’ National Greening Program, a large-scale tree planting initiative that generated hundreds of thousands of jobs. Exploiting the program’s staggered roll-out, a dynamic difference-in-differences strategy reveals significant gains in tree cover and reductions in poverty between 2011 and 2018. Poverty reduction is channeled through labor market shifts reducing agricultural work while increasing unskilled and service jobs, in turn generating gains in income, consumption, and assets. While payments have short-term effects, combining them with income-generating forest assets yields longer-lasting effects, highlighting how nature-based, multifaceted interventions can support rural economies.</a>
+        <a href="https://www.sciencedirect.com/science/article/pii/S0921800925000026" target="_blank">Article</a>
       </div>
     </div>
 
+    <div class="paper">
+      <div class="paper-title">Jones Act: Protectionist policy in the twenty-first century</div>
+      <div class="paper-authors">Jeffrey Pagel, Ike Brannon, and Russ Kashian</div>
+      <div class="paper-journal">Maritime Economics and Logistics, 2019</div>
+      <div class="paper-links">
+        <a href="https://link.springer.com/article/10.1057/s41278-017-0076-z" target="_blank">Article</a>
+      </div>
+    </div>
 
+    <div class="paper">
+      <div class="paper-title">Measuring X-efficiency in NCAA Division III athletics</div>
+      <div class="paper-authors">Russell D. Kashian and Jeff Pagel</div>
+      <div class="paper-journal">Journal of Sports Economics, 2016</div>
+      <div class="paper-links">
+        <a href="https://journals.sagepub.com/doi/10.1177/1527002514551410" target="_blank">Article</a>
+      </div>
+    </div>
+
+    <h2>Policy Reports</h2>
+
+    <div class="paper">
+      <div class="paper-title">Biodiversity for a Livable Planet: An Evaluation of World Bank Group Support for Biodiversity, Fiscal Years 2010–2024</div>
+      <div class="paper-authors">World Bank Independent Evaluation Group, 2025</div>
+      <div class="paper-links">
+        <a href="https://live-rad-ieg.pantheonsite.io/evaluations/biodiversity-livable-planet" target="_blank">Report</a>
+        <a href="https://live-rad-ieg.pantheonsite.io/evaluations/biodiversity-livable-planet#summary" target="_blank">Summary</a>
+      </div>
+    </div>
+
+    <h2>Working Papers</h2>
+
+    <div class="paper">
+      <div class="paper-title">More Than Just Carbon: The Socioeconomic Impact of Large-Scale Tree Planting</div>
+      <div class="paper-authors">with Lorenzo Sileci and Charles Palmer</div>
+      <div class="paper-desc">
+        This paper studies the poverty effects of the Philippines’ National Greening Program, showing gains in tree cover alongside reductions in poverty and shifts in local labor markets.
+      </div>
+      <div class="paper-links">
+        <a href="https://www.lse.ac.uk/granthaminstitute/publication/more-than-just-carbon-the-socioeconomic-impact-of-large-scale-tree-planting/" target="_blank">Working Paper</a>
+        <a href="https://voxdev.org/topic/environment/more-carbon-socioeconomic-impact-large-scale-tree-planting" target="_blank">VoxDev</a>
+      </div>
+    </div>
+
+    <div class="paper">
+      <div class="paper-title">Mangrove Planting, Changing Fish Markets and Food Security</div>
+      <div class="paper-authors">with Charles Palmer and Lorenzo Sileci</div>
+      <div class="paper-desc">
+        This project examines how mangrove restoration affects fisheries, prices, and household diets, finding more fishing activity but short-run pressure on productivity and food consumption patterns.
+      </div>
+    </div>
+
+    <div class="paper">
+      <div class="paper-title">Aid Against Trees? Evidence from a Community-Driven Development Program in the Philippines</div>
+      <div class="paper-desc">
+        Using quasi-experimental evidence, this paper studies whether community-driven development programs can unintentionally increase deforestation, especially through infrastructure-related investments.
+      </div>
+      <div class="paper-links">
+        <a href="https://www.jeffreypagel.com/uploads/1/4/7/0/147022022/aid_against_trees_evidence_from_a_community_driven_development_program_in_the_philippines.pdf" target="_blank">Paper</a>
+      </div>
+    </div>
+
+    <div class="paper">
+      <div class="paper-title">Multidimensional Energy Poverty: A Quasi-experimental Approach Applied to Education</div>
+      <div class="paper-desc">
+        This paper develops a multidimensional energy poverty index and applies it to rural Uganda to study how overlapping energy constraints shape educational outcomes.
+      </div>
+    </div>
+
+    <h2>Selected Works in Progress</h2>
+
+    <div class="work-item">Tree Planting, Land Use Change and Biodiversity (with Lorenzo Sileci and Charles Palmer)</div>
+    <div class="work-item">Risk, Resilience, and Forests: The Pro-Environmental Impact of Agricultural Insurance (with Ryan Abman)</div>
+    <div class="work-item">Pipeline Accidents and Poverty (with Miquel-Àngel Garciá-López)</div>
+    <div class="work-item">Deforestation and a Nation-wide Titling Reform</div>
   </div>
 </body>
 </html>
