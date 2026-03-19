@@ -18,11 +18,11 @@
       -moz-osx-font-smoothing: grayscale;
     }
 
-    .container {
-      max-width: 1000px; /* slightly wider page */
-      margin: 0 auto;
-      padding: 60px 32px 80px;
-    }
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 32px 80px;
+}
 
     .site-title {
       text-align: center;
@@ -50,15 +50,16 @@
     }
 
     /* MAIN LAYOUT */
-    .teaching-main {
-      display: flex;
-      gap: 50px;
-      align-items: center; /* center image vertically */
-    }
+.teaching-main {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start; /* aligns with top of text */
+}
 
-    .teaching-image {
-      flex: 0 0 300px;
-    }
+.teaching-image {
+  flex: 0 0 300px;
+  margin-top: 10px;  /* adjust this value if needed */
+}
 
     .teaching-image img {
       width: 300px;
