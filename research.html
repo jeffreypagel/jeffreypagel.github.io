@@ -31,18 +31,18 @@
       font-weight: 300;
       color: #000;
     }
-    
-        .research-image {
-          margin-bottom: 30px;
-        }
-        
-        .research-image img {
-          width: 100%;        /* take full container width */
-          max-width: 100%;
-          height: auto;
-          display: block;
-        }
-    
+
+    .research-image {
+      margin-bottom: 30px;
+    }
+
+    .research-image img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
     .nav {
       text-align: center;
       margin-bottom: 60px;
@@ -75,33 +75,60 @@
     }
 
     .paper {
-      margin-bottom: 26px;
+      margin-bottom: 24px;
     }
 
     .paper-title {
       font-size: 1rem;
       font-weight: 400;
-      margin-bottom: 4px;
+      margin-bottom: 3px;
     }
 
     .paper-authors,
-    .paper-journal,
-    .paper-desc {
+    .paper-journal {
       font-size: 0.95rem;
       font-weight: 300;
       color: #000;
-      margin-bottom: 5px;
+      margin-bottom: 4px;
     }
 
-    .paper-links a {
+    .paper-meta {
       font-size: 0.9rem;
+      margin-bottom: 4px;
+    }
+
+    .paper-meta a,
+    .paper-meta summary {
       color: #000;
       text-decoration: none;
-      margin-right: 12px;
+      font-size: 0.9rem;
+      font-weight: 300;
+      display: inline;
+      cursor: pointer;
     }
 
-    .paper-links a:hover {
+    .paper-meta a:hover,
+    .paper-meta summary:hover {
       text-decoration: underline;
+    }
+
+    .paper-meta details {
+      display: inline;
+    }
+
+    .paper-meta details summary {
+      list-style: none;
+    }
+
+    .paper-meta details summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .abstract-text {
+      margin-top: 8px;
+      margin-bottom: 2px;
+      font-size: 0.92rem;
+      max-width: 760px;
     }
 
     .work-item {
@@ -133,19 +160,84 @@
   <div class="container">
     <div class="site-title">Jeffrey Pagel</div>
 
-<div class="nav">
-  <a href="index.html">About</a>
-  <a href="research.html">Research</a>
-  <a href="teaching.html">Teaching</a>
-  <a href="contact.html">Contact</a>
-</div>
+    <div class="nav">
+      <a href="index.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="contact.html">Contact</a>
+    </div>
 
-<div class="research-image">
-  <img src="assets/files/9096D629-85D9-43D0-A9B0-45C3057AF2BC_1_105_c.jpeg" alt="Research image" />
-</div>
+    <div class="research-image">
+      <img src="assets/files/9096D629-85D9-43D0-A9B0-45C3057AF2BC_1_105_c.jpeg" alt="Research image" />
+    </div>
 
-    
     <h1>Research</h1>
+
+    <h2>Working Papers</h2>
+
+    <div class="paper">
+      <div class="paper-title">More Than Just Carbon: The Socioeconomic Impact of Large-Scale Tree Planting</div>
+      <div class="paper-authors">with Lorenzo Sileci and Charles Palmer</div>
+      <div class="paper-meta">
+        [
+        <details>
+          <summary>abstract</summary>
+          <div class="abstract-text">
+            This paper studies the poverty effects of the Philippines’ National Greening Program, showing gains in tree cover alongside reductions in poverty and shifts in local labor markets.
+          </div>
+        </details>
+        |
+        <a href="https://www.lse.ac.uk/granthaminstitute/publication/more-than-just-carbon-the-socioeconomic-impact-of-large-scale-tree-planting/" target="_blank">paper</a>
+        |
+        <a href="https://voxdev.org/topic/environment/more-carbon-socioeconomic-impact-large-scale-tree-planting" target="_blank">voxdev</a>
+        ]
+      </div>
+    </div>
+
+    <div class="paper">
+      <div class="paper-title">Mangrove Planting, Changing Fish Markets and Food Security</div>
+      <div class="paper-authors">with Charles Palmer and Lorenzo Sileci</div>
+      <div class="paper-meta">
+        [
+        <details>
+          <summary>abstract</summary>
+          <div class="abstract-text">
+            This project examines how mangrove restoration affects fisheries, prices, and household diets, finding more fishing activity but short-run pressure on productivity and food consumption patterns.
+          </div>
+        </details>
+        ]
+      </div>
+    </div>
+
+    <div class="paper">
+      <div class="paper-title">Aid Against Trees? Evidence from a Community-Driven Development Program in the Philippines</div>
+      <div class="paper-meta">
+        [
+        <details>
+          <summary>abstract</summary>
+          <div class="abstract-text">
+            Using quasi-experimental evidence, this paper studies whether community-driven development programs can unintentionally increase deforestation, especially through infrastructure-related investments.
+          </div>
+        </details>
+        |
+        <a href="assets/files/papers/aid_against_trees_evidence_from_a_community_driven_development_program_in_the_philippines.pdf" target="_blank">paper</a>
+        ]
+      </div>
+    </div>
+
+    <div class="paper">
+      <div class="paper-title">Multidimensional Energy Poverty: A Quasi-experimental Approach Applied to Education</div>
+      <div class="paper-meta">
+        [
+        <details>
+          <summary>abstract</summary>
+          <div class="abstract-text">
+            This paper develops a multidimensional energy poverty index and applies it to rural Uganda to study how overlapping energy constraints shape educational outcomes.
+          </div>
+        </details>
+        ]
+      </div>
+    </div>
 
     <h2>Publications</h2>
 
@@ -153,8 +245,10 @@
       <div class="paper-title">A natural resource curse: The unintended effects of gold mining on malaria</div>
       <div class="paper-authors">Jeffrey Pagel</div>
       <div class="paper-journal">Ecological Economics, 2025</div>
-      <div class="paper-links">
-        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0921800924003665?casa_token=AYXj9mjGiysAAAAA:vDhNxuFv1wxBWqB0u4qv2oCbe_XMGEVzGGggzcE-E6V32fhPsGc5tK_Anl7irzlhNpFlZJLjHB_Y" target="_blank">Article</a>
+      <div class="paper-meta">
+        [
+        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0921800924003665?casa_token=AYXj9mjGiysAAAAA:vDhNxuFv1wxBWqB0u4qv2oCbe_XMGEVzGGggzcE-E6V32fhPsGc5tK_Anl7irzlhNpFlZJLjHB_Y" target="_blank">paper</a>
+        ]
       </div>
     </div>
 
@@ -162,8 +256,10 @@
       <div class="paper-title">Jones Act: Protectionist policy in the twenty-first century</div>
       <div class="paper-authors">Jeffrey Pagel, Ike Brannon, and Russ Kashian</div>
       <div class="paper-journal">Maritime Economics and Logistics, 2019</div>
-      <div class="paper-links">
-        <a href="https://link.springer.com/article/10.1057/s41278-017-0076-z" target="_blank">Article</a>
+      <div class="paper-meta">
+        [
+        <a href="https://link.springer.com/article/10.1057/s41278-017-0076-z" target="_blank">paper</a>
+        ]
       </div>
     </div>
 
@@ -171,8 +267,10 @@
       <div class="paper-title">Measuring X-efficiency in NCAA Division III athletics</div>
       <div class="paper-authors">Russell D. Kashian and Jeff Pagel</div>
       <div class="paper-journal">Journal of Sports Economics, 2016</div>
-      <div class="paper-links">
-        <a href="https://journals.sagepub.com/doi/10.1177/1527002514551410" target="_blank">Article</a>
+      <div class="paper-meta">
+        [
+        <a href="https://journals.sagepub.com/doi/10.1177/1527002514551410" target="_blank">paper</a>
+        ]
       </div>
     </div>
 
@@ -181,48 +279,12 @@
     <div class="paper">
       <div class="paper-title">Biodiversity for a Livable Planet: An Evaluation of World Bank Group Support for Biodiversity, Fiscal Years 2010–2024</div>
       <div class="paper-authors">World Bank Independent Evaluation Group, 2025</div>
-      <div class="paper-links">
-        <a href="https://live-rad-ieg.pantheonsite.io/evaluations/biodiversity-livable-planet" target="_blank">Report</a>
-        <a href="https://live-rad-ieg.pantheonsite.io/evaluations/biodiversity-livable-planet#summary" target="_blank">Summary</a>
-      </div>
-    </div>
-
-    <h2>Working Papers</h2>
-
-    <div class="paper">
-      <div class="paper-title">More Than Just Carbon: The Socioeconomic Impact of Large-Scale Tree Planting</div>
-      <div class="paper-authors">with Lorenzo Sileci and Charles Palmer</div>
-      <div class="paper-desc">
-        This paper studies the poverty effects of the Philippines’ National Greening Program, showing gains in tree cover alongside reductions in poverty and shifts in local labor markets.
-      </div>
-      <div class="paper-links">
-        <a href="https://www.lse.ac.uk/granthaminstitute/publication/more-than-just-carbon-the-socioeconomic-impact-of-large-scale-tree-planting/" target="_blank">Working Paper</a>
-        <a href="https://voxdev.org/topic/environment/more-carbon-socioeconomic-impact-large-scale-tree-planting" target="_blank">VoxDev</a>
-      </div>
-    </div>
-
-    <div class="paper">
-      <div class="paper-title">Mangrove Planting, Changing Fish Markets and Food Security</div>
-      <div class="paper-authors">with Charles Palmer and Lorenzo Sileci</div>
-      <div class="paper-desc">
-        This project examines how mangrove restoration affects fisheries, prices, and household diets, finding more fishing activity but short-run pressure on productivity and food consumption patterns.
-      </div>
-    </div>
-
-    <div class="paper">
-      <div class="paper-title">Aid Against Trees? Evidence from a Community-Driven Development Program in the Philippines</div>
-      <div class="paper-desc">
-        Using quasi-experimental evidence, this paper studies whether community-driven development programs can unintentionally increase deforestation, especially through infrastructure-related investments.
-      </div>
-      <div class="paper-links">
-        <a href="https://www.jeffreypagel.com/uploads/1/4/7/0/147022022/aid_against_trees_evidence_from_a_community_driven_development_program_in_the_philippines.pdf" target="_blank">Paper</a>
-      </div>
-    </div>
-
-    <div class="paper">
-      <div class="paper-title">Multidimensional Energy Poverty: A Quasi-experimental Approach Applied to Education</div>
-      <div class="paper-desc">
-        This paper develops a multidimensional energy poverty index and applies it to rural Uganda to study how overlapping energy constraints shape educational outcomes.
+      <div class="paper-meta">
+        [
+        <a href="https://live-rad-ieg.pantheonsite.io/evaluations/biodiversity-livable-planet" target="_blank">paper</a>
+        |
+        <a href="https://live-rad-ieg.pantheonsite.io/evaluations/biodiversity-livable-planet#summary" target="_blank">summary</a>
+        ]
       </div>
     </div>
 
