@@ -1,5 +1,11 @@
 # jeffreypagel.github.io
 
+title: Jeffrey Pagel
+description: Fellow in Environmental Economics at the London School of Economics
 theme: jekyll-theme-minimal
-title: Octocat's homepage
-description: Bookmark this to keep an eye on my project updates!
+markdown: kramdown
+
+
+
+
+
