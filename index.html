@@ -12,84 +12,80 @@
       font-weight: 300;
       color: #000;
       background: #ffffff;
-      line-height: 1.85;
+      line-height: 1.75;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
 
     .container {
-      max-width: 980px;
+      max-width: 900px;
       margin: 0 auto;
-      padding: 56px 32px 72px;
+      padding: 60px 32px 80px;
     }
 
     .site-title {
       text-align: center;
-      font-size: 1.9rem;
-      letter-spacing: 0.04em;
-      text-transform: none;
-      margin-bottom: 18px;
+      font-size: 1.6rem;
+      letter-spacing: 0.02em;
+      margin-bottom: 10px;
       font-weight: 300;
-      color: #222;
+      color: #000;
     }
 
     .nav {
       text-align: center;
-      padding-bottom: 0;
       margin-bottom: 60px;
-      border-bottom: none;
     }
 
     .nav a {
       text-decoration: none;
-      color: #6a6a6a;
-      margin: 0 14px;
-      font-size: 0.95rem;
+      color: #777;
+      margin: 0 12px;
+      font-size: 0.9rem;
       font-weight: 300;
     }
 
     .nav a:hover {
-      color: #222;
-      text-decoration: none;
+      color: #000;
     }
 
     .main {
       display: flex;
-      gap: 64px;
-      align-items: center;
+      gap: 60px;
+      align-items: flex-start;
       justify-content: center;
       flex-wrap: wrap;
     }
 
-.photo {
-  flex: 0 0 280px;
-}
+    .photo {
+      flex: 0 0 260px;
+    }
 
-.photo img {
-  width: 280px;
-  height: 280px;
+    .photo img {
+      width: 260px;
+      height: 260px;
       object-fit: cover;
       object-position: center top;
       display: block;
-      border-radius: 50%;
+      border-radius: 0; /* square */
     }
 
     .content {
       flex: 1;
-      min-width: 280px;
-      max-width: 560px;
-      font-size: 1rem;
+      max-width: 520px;
+      font-size: 0.95rem;
       font-weight: 300;
     }
 
     .content p {
       margin-top: 0;
-      margin-bottom: 1.35em;
+      margin-bottom: 1.4em;
       color: #000;
     }
 
     .content a {
       color: #000;
+      text-decoration: none;
     }
 
     .content a:hover {
@@ -97,51 +93,30 @@
     }
 
     .footer {
-      margin-top: 72px;
-      padding-top: 0;
-      border-top: none;
-      font-size: 0.92rem;
-      color: #8a8a8a;
+      margin-top: 80px;
+      font-size: 0.85rem;
+      color: #888;
       text-align: center;
       font-weight: 300;
     }
 
     @media (max-width: 700px) {
       .container {
-        padding: 40px 24px 56px;
-      }
-
-      .site-title {
-        font-size: 1.5rem;
-        margin-bottom: 14px;
-      }
-
-      .nav {
-        margin-bottom: 40px;
-      }
-
-      .nav a {
-        display: inline-block;
-        margin: 6px 10px;
+        padding: 40px 20px 60px;
       }
 
       .main {
         flex-direction: column;
-        gap: 32px;
         align-items: center;
-      }
-
-      .photo {
-        flex: none;
+        gap: 30px;
       }
 
       .photo img {
-        width: 200px;
-        height: 200px;
+        width: 220px;
+        height: 220px;
       }
 
       .content {
-        min-width: auto;
         max-width: 100%;
       }
     }
@@ -165,11 +140,10 @@
 
       <div class="content">
         <p>
-          Welcome! I am a Research Fellow of Environmental Economics in the Department of Geography and Environment and the Global School of Sustainability at the London School of Economics.       
-          My research lies at the intersection of development, environmental, and resource economics, with an emphasis on sustainable development policy. I use geospatial impact evaluation methods to 
-          study how development programs and public policies affect people and the environment.
+          Welcome! I am a Research Fellow of Environmental Economics in the Department of Geography and Environment and the Global School of Sustainability at the London School of Economics.
+          My research lies at the intersection of development, environmental, and resource economics, with an emphasis on sustainable development policy. I use geospatial impact evaluation methods to study how development programs and public policies affect people and the environment.
         </p>
-        
+
         <p>
           I also serve as a consultant with the Independent Evaluation Group at the World Bank and sit on the board at Health Media Labs in Washington, D.C., where we provide expertise in social and behavioral research for multilateral and international development organizations.
         </p>
