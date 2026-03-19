@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jeffrey Pagel</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: #222;
+      background: #fff;
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 24px 60px;
+    }
+
+    .site-title {
+      text-align: center;
+      font-size: 2.2rem;
+      letter-spacing: 0.08em;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .nav {
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 14px;
+      margin-bottom: 42px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #222;
+      margin: 0 18px;
+      font-size: 1rem;
+    }
+
+    .nav a:hover {
+      text-decoration: underline;
+    }
+
+    .main {
+      display: flex;
+      gap: 36px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .photo {
+      flex: 0 0 260px;
+    }
+
+    .photo img {
+      width: 100%;
+      max-width: 260px;
+      height: auto;
+      display: block;
+      border-radius: 4px;
+    }
+
+    .content {
+      flex: 1;
+      min-width: 280px;
+      font-size: 1.05rem;
+    }
+
+    .content p {
+      margin-top: 0;
+      margin-bottom: 1.2em;
+    }
+
+    .content a {
+      color: #1a4f8b;
+      text-decoration: none;
+    }
+
+    .content a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      margin-top: 50px;
+      padding-top: 18px;
+      border-top: 1px solid #ddd;
+      font-size: 0.95rem;
+      color: #666;
+      text-align: center;
+    }
+
+    @media (max-width: 700px) {
+      .site-title {
+        font-size: 1.6rem;
+      }
+
+      .nav a {
+        display: inline-block;
+        margin: 6px 10px;
+      }
+
+      .main {
+        flex-direction: column;
+      }
+
+      .photo {
+        flex: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="site-title">Jeffrey Pagel</div>
+
+    <div class="nav">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="main" id="about">
+      <div class="photo">
+        <img src="assets/img/profile.jpg" alt="Jeffrey Pagel portrait" />
+      </div>
+
+      <div class="content">
+        <p>
+          Welcome! I am a Fellow in Environmental Economics at the London School of Economics.
+          My research lies at the intersection of development, environmental, and resource economics,
+          with an emphasis on public policy. I use geospatial impact evaluations to understand the
+          human and ecological impacts of development programs and public policies.
+        </p>
+
+        <p>
+          Additionally, I work as an Ethical and Project Evaluation Consultant. Previously, I was a
+          Research Officer at the Grantham Research Institute at the London School of Economics. I
+          received my PhD from the University of Barcelona in 2021.
+        </p>
+
+        <p>
+          You can find my CV
+          <a href="assets/files/Jeffrey_Pagel_CV.pdf" target="_blank">here</a>.
+        </p>
+
+        <p>
+          Email:
+          <a href="mailto:j.pagel@lse.ac.uk">j.pagel@lse.ac.uk</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="content" id="research" style="margin-top: 50px;">
+      <h2>Research</h2>
+      <p>
+        Add your working papers, publications, research projects, and ongoing work here.
+      </p>
+    </div>
+
+    <div class="content" id="teaching" style="margin-top: 40px;">
+      <h2>Teaching</h2>
+      <p>
+        Add courses taught, lecture topics, teaching materials, and supervision details here.
+      </p>
+    </div>
+
+    <div class="content" id="contact" style="margin-top: 40px;">
+      <h2>Contact</h2>
+      <p>
+        Jeffrey Pagel<br />
+        London School of Economics<br />
+        <a href="mailto:j.pagel@lse.ac.uk">j.pagel@lse.ac.uk</a>
+      </p>
+    </div>
+
+    <div class="footer">
+      © Jeffrey Pagel
+    </div>
+  </div>
+</body>
+</html>
