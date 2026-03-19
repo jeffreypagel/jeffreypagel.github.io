@@ -8,11 +8,12 @@
   <style>
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-weight: 300;
       color: #000;
       background: #ffffff;
-      line-height: 1.75;
+      line-height: 1.65;
+      letter-spacing: 0.01em;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
@@ -23,27 +24,28 @@
       padding: 60px 32px 80px;
     }
 
-    .site-title {
-      text-align: center;
-      font-size: 1.6rem;
-      letter-spacing: 0.02em;
-      margin-bottom: 10px;
-      font-weight: 300;
-      color: #000;
-    }
+.site-title {
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 0.02em;
+  margin-bottom: 10px;
+  font-weight: 300;
+  color: #000;
+}
 
     .nav {
       text-align: center;
       margin-bottom: 60px;
     }
 
-    .nav a {
-      text-decoration: none;
-      color: #777;
-      margin: 0 12px;
-      font-size: 0.9rem;
-      font-weight: 300;
-    }
+.nav a {
+  text-decoration: none;
+  color: #777;
+  margin: 0 10px;
+  font-size: 0.85rem;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
 
     .nav a:hover {
       color: #000;
@@ -57,31 +59,31 @@
       flex-wrap: wrap;
     }
 
-    .photo {
-      flex: 0 0 260px;
-    }
+.photo {
+  flex: 0 0 320px;
+}
 
-    .photo img {
-      width: 260px;
-      height: 260px;
-      object-fit: cover;
-      object-position: center top;
-      display: block;
-      border-radius: 0; /* square */
-    }
+.photo img {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  border-radius: 0;
+}
 
-    .content {
-      flex: 1;
-      max-width: 520px;
-      font-size: 0.95rem;
-      font-weight: 300;
-    }
+.content {
+  flex: 1;
+  max-width: 480px;
+  font-size: 0.92rem;
+  font-weight: 300;
+}
 
-    .content p {
-      margin-top: 0;
-      margin-bottom: 1.4em;
-      color: #000;
-    }
+.content p {
+  margin-top: 0;
+  margin-bottom: 1.3em;
+  color: #000;
+}
 
     .content a {
       color: #000;
@@ -105,11 +107,13 @@
         padding: 40px 20px 60px;
       }
 
-      .main {
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-      }
+.main {
+  display: flex;
+  gap: 70px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
       .photo img {
         width: 220px;
