@@ -50,24 +50,18 @@
       color: #000;
     }
 
-    h1 {
-      font-size: 1.2rem;
-      font-weight: 400;
-      margin-bottom: 30px;
-    }
-
     /* MAIN LAYOUT */
     .contact-main {
       display: flex;
       gap: 60px;
       align-items: flex-start;
-      justify-content: center;
       flex-wrap: wrap;
     }
 
+    /* KEY FIX: align text to left margin */
     .contact-text {
       flex: 1;
-      max-width: 480px;
+      max-width: 520px;
       font-size: 0.95rem;
       font-weight: 300;
     }
@@ -124,7 +118,7 @@
 
       .contact-main {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         gap: 30px;
       }
 
@@ -150,8 +144,6 @@
       <a href="contact.html">Contact</a>
     </div>
 
-    <h1>Contact</h1>
-
     <div class="contact-main">
 
       <div class="contact-text">
@@ -174,7 +166,7 @@
       </div>
 
       <div class="contact-image">
-        <img src="assets/files/contact/IMG_0716.jpg" alt="Contact image" />
+        <img src="assets/files/IMG_0716.jpg" alt="Contact image" />
       </div>
 
     </div>
