@@ -92,44 +92,45 @@
       margin-bottom: 4px;
     }
 
-.paper-meta {
+.paper-actions {
   font-size: 0.9rem;
+  margin-top: 2px;
   margin-bottom: 4px;
-
-  display: flex;          /* KEY FIX */
-  align-items: center;
-  flex-wrap: wrap;        /* allows wrapping on small screens */
-  gap: 4px;
 }
 
-.paper-meta details {
+.paper-actions details {
   display: inline;
 }
 
-.paper-meta summary {
+.paper-actions summary {
+  display: inline;
   cursor: pointer;
   list-style: none;
 }
 
-.paper-meta summary::-webkit-details-marker {
+.paper-actions summary::-webkit-details-marker {
   display: none;
 }
 
-.paper-meta a {
-  text-decoration: none;
+.paper-actions a,
+.paper-actions summary {
   color: #000;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 300;
 }
 
-.paper-meta a:hover,
-.paper-meta summary:hover {
+.paper-actions a:hover,
+.paper-actions summary:hover {
   text-decoration: underline;
 }
 
 .abstract-text {
-  flex-basis: 100%;   /* forces abstract to drop BELOW */
   margin-top: 8px;
+  margin-left: 18px;
   max-width: 760px;
   font-size: 0.92rem;
+  line-height: 1.55;
 }
     
     .work-item {
@@ -180,27 +181,41 @@
   <div class="paper-title">More Than Just Carbon: The Socioeconomic Impact of Large-Scale Tree Planting</div>
   <div class="paper-authors">with Lorenzo Sileci and Charles Palmer</div>
 
-<div class="paper-meta">
-  <span>[</span>
+  <details class="paper-actions">
+    <summary>[ abstract |</summary>
+    <a href="https://www.lse.ac.uk/granthaminstitute/publication/more-than-just-carbon-the-socioeconomic-impact-of-large-scale-tree-planting/" target="_blank">paper</a>
+    <span> | </span>
+    <a href="https://voxdev.org/topic/environment/more-carbon-socioeconomic-impact-large-scale-tree-planting" target="_blank">voxdev</a>
+    <span> ]</span>
 
-  <details>
-    <summary>abstract</summary>
     <div class="abstract-text">
-      We evaluate the poverty impacts of the Philippines’ National Greening Program...
+      We evaluate the poverty impacts of the Philippines’ National Greening Program, a large-scale tree planting initiative that
+      generated hundreds of thousands of jobs. Exploiting the program’s staggered roll-out, a dynamic difference-in-differences strategy 
+      reveals significant gains in tree cover and reductions in poverty between 2011 and 2018. Poverty reduction is channeled through 
+      labor market shifts reducing agricultural work while increasing unskilled and service jobs, in turn generating gains in income, 
+      consumption, and assets. While payments have short-term effects, combining them with income-generating forest assets yields 
+      longer-lasting effects, highlighting how nature-based, multifaceted interventions can support rural economies.
     </div>
   </details>
-
-  <span>|</span>
-
-  <a href="..." target="_blank">paper</a>
-
-  <span>|</span>
-
-  <a href="..." target="_blank">voxdev</a>
-
-  <span>]</span>
 </div>
 
+<div class="paper">
+  <div class="paper-title">More Than Just Carbon: The Socioeconomic Impact of Large-Scale Tree Planting</div>
+  <div class="paper-authors">with Lorenzo Sileci and Charles Palmer</div>
+
+  <div class="paper-actions">
+    [ <a href="javascript:void(0)">abstract</a> |
+    <a href="https://www.lse.ac.uk/granthaminstitute/publication/more-than-just-carbon-the-socioeconomic-impact-large-scale-tree-planting/" target="_blank">paper</a> |
+    <a href="https://voxdev.org/topic/environment/more-carbon-socioeconomic-impact-large-scale-tree-planting" target="_blank">voxdev</a> ]
+  </div>
+
+  <div class="abstract-text">
+    We evaluate the poverty impacts of the Philippines’ National Greening Program, a large-scale tree planting initiative that
+    generated hundreds of thousands of jobs...
+  </div>
+</div>
+
+    
     <div class="paper">
       <div class="paper-title">Mangrove Planting, Changing Fish Markets and Food Security</div>
       <div class="paper-authors">with Charles Palmer and Lorenzo Sileci</div>
