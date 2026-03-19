@@ -29,7 +29,6 @@
       font-size: 2.2rem;
       margin-bottom: 14px;
       font-weight: 300;
-      color: #000;
     }
 
     .nav {
@@ -50,7 +49,7 @@
       color: #000;
     }
 
-    /* MAIN LAYOUT */
+    /* LAYOUT */
     .contact-main {
       display: flex;
       gap: 60px;
@@ -58,11 +57,11 @@
       flex-wrap: wrap;
     }
 
-    /* KEY FIX: align text to left margin */
-.contact-text {
-  flex: 1;
-  max-width: 600px;
-}
+    .contact-text {
+      flex: 1;
+      max-width: 600px;
+      font-size: 0.95rem;
+    }
 
     .contact-text p {
       margin-top: 0;
@@ -77,22 +76,28 @@
     .contact-text a:hover {
       text-decoration: underline;
     }
-.contact-image {
-  flex: 0 0 420px;   /* bigger container */
-}
 
-.contact-image img {
-  width: 420px;      /* bigger image */
-  height: auto;      /* prevents cropping */
-  display: block;
-}
+    /* FORCE EXACTLY TWO LINES */
+    .intro-lines span {
+      display: block;
+      white-space: nowrap;
+    }
+
+    .contact-image {
+      flex: 0 0 420px;
+    }
+
+    .contact-image img {
+      width: 420px;
+      height: auto;
+      display: block;
+    }
 
     .footer {
       margin-top: 70px;
       font-size: 0.85rem;
       color: #888;
       text-align: center;
-      font-weight: 300;
     }
 
     @media (max-width: 700px) {
@@ -120,11 +125,15 @@
       }
 
       .contact-image img {
-        width: 240px;
+        width: 260px;
       }
 
       .contact-text {
         max-width: 100%;
+      }
+
+      .intro-lines span {
+        white-space: normal;
       }
     }
   </style>
@@ -144,11 +153,10 @@
     <div class="contact-main">
 
       <div class="contact-text">
-      <p>
-        Please feel free to contact me with questions regarding my research,
-        <br>
-        developing content, and general inquiries.
-      </p>
+        <p class="intro-lines">
+          <span>Please feel free to contact me with questions regarding my research,</span>
+          <span>developing content, and general inquiries.</span>
+        </p>
 
         <p>
           <strong>Email:</strong> <a href="mailto:j.pagel@lse.ac.uk">j.pagel@lse.ac.uk</a><br />
