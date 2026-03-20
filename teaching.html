@@ -54,14 +54,13 @@
     .contact-main {
       display: flex;
       gap: 60px;
-      align-items: flex-start;
+      align-items: center; /* key fix */
     }
 
     .contact-text {
       flex: 1;
       max-width: 600px;
       font-size: 0.95rem;
-      margin-top: 0;
     }
 
     .contact-text p {
@@ -69,13 +68,8 @@
       margin-bottom: 1.3em;
     }
 
-    .contact-text p:first-child {
-      margin-top: 0;
-    }
-
     .institution {
       font-weight: 400;
-      margin-top: 0;
       margin-bottom: 0.4em;
     }
 
@@ -91,8 +85,7 @@
 
     .contact-image {
       flex: 0 0 420px;
-      margin-top: 0;
-      align-self: flex-start;
+      align-self: center; /* extra safeguard */
     }
 
     .contact-image img {
@@ -130,6 +123,10 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 30px;
+      }
+
+      .contact-image {
+        align-self: flex-start;
       }
 
       .contact-image img {
