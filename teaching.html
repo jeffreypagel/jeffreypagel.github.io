@@ -87,11 +87,19 @@
       flex: 0 0 420px;
     }
 
-    .contact-image img {
+    /* fixed frame + crop */
+    .contact-image-frame {
       width: 420px;
-      height: auto;
+      height: 560px;
+      overflow: hidden;
+    }
+
+    .contact-image-frame img {
+      width: 100%;
+      height: 100%;
       display: block;
-      margin-top: -18px;
+      object-fit: cover;
+      object-position: center 30%;
     }
 
     .footer {
@@ -125,9 +133,13 @@
         gap: 30px;
       }
 
-      .contact-image img {
+      .contact-image {
+        flex: none;
+      }
+
+      .contact-image-frame {
         width: 260px;
-        margin-top: 0;
+        height: 340px;
       }
 
       .contact-text {
@@ -174,7 +186,9 @@
       </div>
 
       <div class="contact-image">
-        <img src="assets/files/IMG_0924.jpg" alt="Teaching image" />
+        <div class="contact-image-frame">
+          <img src="assets/files/IMG_0924.jpg" alt="Teaching image" />
+        </div>
       </div>
     </div>
 
