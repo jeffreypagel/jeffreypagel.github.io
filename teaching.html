@@ -54,7 +54,7 @@
     .contact-main {
       display: flex;
       gap: 60px;
-      align-items: center; /* key fix */
+      align-items: flex-start;
     }
 
     .contact-text {
@@ -85,13 +85,13 @@
 
     .contact-image {
       flex: 0 0 420px;
-      align-self: center; /* extra safeguard */
     }
 
     .contact-image img {
       width: 420px;
       height: auto;
       display: block;
+      margin-top: -18px;
     }
 
     .footer {
@@ -125,12 +125,9 @@
         gap: 30px;
       }
 
-      .contact-image {
-        align-self: flex-start;
-      }
-
       .contact-image img {
         width: 260px;
+        margin-top: 0;
       }
 
       .contact-text {
