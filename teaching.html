@@ -8,6 +8,7 @@
   <link rel="icon" type="image/jpeg" href="assets/files/lse-beaver.jpg">
 
   <style>
+
     body {
       margin: 0;
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -29,14 +30,13 @@
     .site-title {
       text-align: center;
       font-size: 2.2rem;
-      letter-spacing: 0.02em;
       margin-bottom: 14px;
-      color: #000;
+      font-weight: 300;
     }
 
     .nav {
       text-align: center;
-      margin-bottom: 60px;
+      margin-bottom: 50px;
     }
 
     .nav a {
@@ -52,62 +52,55 @@
       color: #000;
     }
 
-    .main {
+    /* LAYOUT */
+    .contact-main {
       display: flex;
       gap: 60px;
       align-items: flex-start;
-      justify-content: center;
-      flex-wrap: wrap;
     }
 
-    .photo {
-      flex: 0 0 320px;
-    }
-
-    .photo img {
-      width: 320px;
-      height: 320px;
-      object-fit: cover;
-      object-position: center center;
-      display: block;
-      border-radius: 0;
-    }
-
-    .content {
+    .contact-text {
       flex: 1;
-      max-width: 480px;
-      font-size: 0.92rem;
-      font-weight: 300;
+      max-width: 600px;
+      font-size: 0.95rem;
     }
 
-    .content p {
+    .contact-text p {
       margin-top: 0;
-      margin-bottom: 0.7em;
-      color: #000;
+      margin-bottom: 0.6em;
     }
 
     .institution {
       font-weight: 400;
-      margin-bottom: 0.35em;
-    }
-
-    .course-list {
-      margin: 0 0 1.2em 0;
-      padding: 0;
-      list-style: none;
-      line-height: 1.45;
-    }
-
-    .course-list li {
+      margin-top: 1.2em;
       margin-bottom: 0.3em;
     }
 
+    .course-list {
+      margin: 0 0 1em 0;
+      padding-left: 0;
+      list-style: none;
+    }
+
+    .course-list li {
+      margin-bottom: 0.25em;
+    }
+
+    .contact-image {
+      flex: 0 0 420px;
+    }
+
+    .contact-image img {
+      width: 420px;
+      height: auto;
+      display: block;
+    }
+
     .footer {
-      margin-top: 80px;
+      margin-top: 70px;
       font-size: 0.85rem;
       color: #888;
       text-align: center;
-      font-weight: 300;
     }
 
     @media (max-width: 700px) {
@@ -119,45 +112,48 @@
         font-size: 1.6rem;
       }
 
-      .main {
-        display: flex;
-        gap: 40px;
+      .nav {
+        margin-bottom: 36px;
+      }
+
+      .nav a {
+        display: inline-block;
+        margin: 6px 8px;
+      }
+
+      .contact-main {
+        flex-direction: column;
         align-items: flex-start;
-        justify-content: center;
-        flex-wrap: wrap;
+        gap: 30px;
       }
 
-      .photo img {
-        width: 220px;
-        height: 220px;
+      .contact-image img {
+        width: 260px;
       }
 
-.content {
-  flex: 1;
-  max-width: 600px;   /* wider */
-  font-size: 0.92rem;
-  font-weight: 300;
-}
+      .contact-text {
+        max-width: 100%;
+      }
     }
+
   </style>
 </head>
+
 <body>
   <div class="container">
     <div class="site-title">Jeffrey Pagel</div>
 
-<div class="nav">
-  <a href="index.html">About</a>
-  <a href="research.html">Research</a>
-  <a href="teaching.html">Teaching</a>
-  <a href="contact.html">Contact</a>
-</div>
+    <div class="nav">
+      <a href="index.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="contact.html">Contact</a>
+    </div>
 
-    <div class="main">
-      <div class="photo">
-        <img src="assets/files/IMG_0924.jpg" alt="Teaching image" />
-      </div>
+    <div class="contact-main">
 
-      <div class="content">
+      <div class="contact-text">
+
         <p class="institution">London School of Economics</p>
         <ul class="course-list">
           <li>Economic Development and the Environment (2023; 2024; 2025) [MSc course]</li>
@@ -170,16 +166,23 @@
           <li>European and International Economic Environment (2018)</li>
         </ul>
 
-          <!--
-          <p class="institution">Marquette University</p>
-          <ul class="course-list">
-            <li>Business Analytical Tools (2015; 2016)</li>
-            <li>TA for Abdur Chowdhury in International Currency Markets (2014–2016)</li>
-            <li>TA for Heather Kohls in Environmental and Natural Resource Economics (2014–2016)</li>
-            <li>TA for Heather Kohls in Principles of Microeconomics (2014–2016)</li>
-          </ul>
-          -->
+        <!-- Marquette commented out -->
+        <!--
+        <p class="institution">Marquette University</p>
+        <ul class="course-list">
+          <li>Business Analytical Tools (2015; 2016)</li>
+          <li>TA for Abdur Chowdhury in International Currency Markets (2014–2016)</li>
+          <li>TA for Heather Kohls in Environmental and Natural Resource Economics (2014–2016)</li>
+          <li>TA for Heather Kohls in Principles of Microeconomics (2014–2016)</li>
+        </ul>
+        -->
+
       </div>
+
+      <div class="contact-image">
+        <img src="assets/files/IMG_0924.jpg" alt="Teaching image" />
+      </div>
+
     </div>
 
     <div class="footer">
