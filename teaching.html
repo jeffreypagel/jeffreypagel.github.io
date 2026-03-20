@@ -68,16 +68,15 @@
       margin-top: 0;
       margin-bottom: 1.3em;
     }
-
 .institution {
   font-weight: 500;
   font-size: 1rem;
-  margin-top: 0;         /* no extra space above by default */
-  margin-bottom: 0.05em; /* courses sit right underneath */
+  margin-bottom: 0.1em;   /* small gap */
 }
 
 .course-list {
-  margin: 0 0 1.2em 0;   /* gap AFTER the courses */
+  margin-top: 0;          /* 🔥 THIS is the key fix */
+  margin-bottom: 1.2em;   /* keep space before next institution */
   padding: 0;
   list-style: none;
   line-height: 1.45;
