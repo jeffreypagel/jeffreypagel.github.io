@@ -8,7 +8,6 @@
   <link rel="icon" type="image/jpeg" href="assets/files/lse-beaver.jpg">
 
   <style>
-
     body {
       margin: 0;
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -52,21 +51,17 @@
       color: #000;
     }
 
-.contact-main {
-  display: flex;
-  gap: 60px;
-  align-items: flex-start;   /* keep this */
-}
-
-.contact-image {
-  flex: 0 0 420px;
-  align-self: flex-start;   /* THIS is the key fix */
-}
+    .contact-main {
+      display: flex;
+      gap: 60px;
+      align-items: flex-start;
+    }
 
     .contact-text {
       flex: 1;
       max-width: 600px;
       font-size: 0.95rem;
+      margin-top: 0;
     }
 
     .contact-text p {
@@ -74,8 +69,13 @@
       margin-bottom: 1.3em;
     }
 
+    .contact-text p:first-child {
+      margin-top: 0;
+    }
+
     .institution {
       font-weight: 400;
+      margin-top: 0;
       margin-bottom: 0.4em;
     }
 
@@ -89,13 +89,17 @@
       margin-bottom: 0.3em;
     }
 
+    .contact-image {
+      flex: 0 0 420px;
+      margin-top: 0;
+      align-self: flex-start;
+    }
 
-.contact-image img {
-  width: 420px;
-  height: auto;
-  display: block;
-  margin-top: -5px;   /* tiny nudge up */
-}
+    .contact-image img {
+      width: 420px;
+      height: auto;
+      display: block;
+    }
 
     .footer {
       margin-top: 70px;
@@ -136,7 +140,6 @@
         max-width: 100%;
       }
     }
-
   </style>
 </head>
 
@@ -152,9 +155,7 @@
     </div>
 
     <div class="contact-main">
-
       <div class="contact-text">
-
         <p class="institution">London School of Economics</p>
         <ul class="course-list">
           <li>Economic Development and the Environment (2023; 2024; 2025) [MSc course]</li>
@@ -176,13 +177,11 @@
           <li>TA for Heather Kohls in Principles of Microeconomics (2014–2016)</li>
         </ul>
         -->
-
       </div>
 
       <div class="contact-image">
         <img src="assets/files/IMG_0924.jpg" alt="Teaching image" />
       </div>
-
     </div>
 
     <div class="footer">
