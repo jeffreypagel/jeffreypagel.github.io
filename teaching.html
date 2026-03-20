@@ -8,7 +8,6 @@
   <link rel="icon" type="image/jpeg" href="assets/files/lse-beaver.jpg">
 
   <style>
-
     body {
       margin: 0;
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -21,23 +20,23 @@
       -moz-osx-font-smoothing: grayscale;
     }
 
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 40px 32px 80px;   /* was 60px → now 40px */
-}
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 32px 80px;
+    }
 
     .site-title {
       text-align: center;
       font-size: 2.2rem;
-      margin-bottom: 14px;
+      margin-bottom: 10px;
       font-weight: 300;
     }
 
-.nav {
-  text-align: center;
-  margin-bottom: 30px;   /* was 50px */
-}
+    .nav {
+      text-align: center;
+      margin-bottom: 30px;
+    }
 
     .nav a {
       text-decoration: none;
@@ -52,12 +51,12 @@
       color: #000;
     }
 
-    /* LAYOUT */
-.contact-main {
-  display: flex;
-  gap: 60px;
-  align-items: center;   /* THIS is the key change */
-}
+    .contact-main {
+      display: flex;
+      gap: 60px;
+      align-items: flex-start;
+      margin-top: -25px;
+    }
 
     .contact-text {
       flex: 1;
@@ -125,6 +124,7 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 30px;
+        margin-top: 0;
       }
 
       .contact-image img {
@@ -135,7 +135,6 @@
         max-width: 100%;
       }
     }
-
   </style>
 </head>
 
@@ -151,9 +150,7 @@
     </div>
 
     <div class="contact-main">
-
       <div class="contact-text">
-
         <p class="institution">London School of Economics</p>
         <ul class="course-list">
           <li>Economic Development and the Environment (2023; 2024; 2025) [MSc course]</li>
@@ -166,7 +163,6 @@
           <li>European and International Economic Environment (2018)</li>
         </ul>
 
-        <!-- Marquette commented out -->
         <!--
         <p class="institution">Marquette University</p>
         <ul class="course-list">
@@ -176,13 +172,11 @@
           <li>TA for Heather Kohls in Principles of Microeconomics (2014–2016)</li>
         </ul>
         -->
-
       </div>
 
       <div class="contact-image">
         <img src="assets/files/IMG_0924.jpg" alt="Teaching image" />
       </div>
-
     </div>
 
     <div class="footer">
