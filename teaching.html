@@ -52,12 +52,16 @@
       color: #000;
     }
 
-    /* LAYOUT (unchanged from contact) */
-    .contact-main {
-      display: flex;
-      gap: 60px;
-      align-items: flex-start;
-    }
+.contact-main {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;   /* keep this */
+}
+
+.contact-image {
+  flex: 0 0 420px;
+  align-self: flex-start;   /* THIS is the key fix */
+}
 
     .contact-text {
       flex: 1;
@@ -85,9 +89,6 @@
       margin-bottom: 0.3em;
     }
 
-    .contact-image {
-      flex: 0 0 420px;
-    }
 
     .contact-image img {
       width: 420px;
